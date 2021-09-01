@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stysheet" type="text/css" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stysheet" type="text/css" href="./assets/css/style.css">
+
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap.min.css.map">
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap.css">
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap.css.map">
@@ -12,8 +14,6 @@
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap-theme.css.map">
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css">
         <link rel="stysheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css.map">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -21,25 +21,86 @@
             <h2>ABOUT US</h2>
             <img class="img-responsive" src="./assets/img/empresa.jpg">
 
-        <div class="panel panel-default">    
-            <div class="panel-heading">
-                <h3 data-toggle="collapse" data-target="#primeiro-paragrafo">Since 1995</h3>
-            </div>    
-
-            <div class="panel-body">
-                <p id="primeiro-paragrafo" class="collapse in"> Since 1935, bringing beautiful houses, mansions and buildings to the world.</p>
+            <div class="panel-group" id="paineis-sobre">    
+            <div class="panel panel-default">    
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paneis-sobre">Since 1995</h3>
+                </div>    
+                <div id="primeiro-paragrafo" class="collapse in">
+                    <div class="panel-body">
+                        <p> Since 1935, bringing beautiful houses, mansions and buildings to the world.</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-            <h3 data-toggle="collapse" data-target="#segundo-paragrafo">Good prices</h3>
-            <p id="segundo-paragrafo" class="collapse"> The TopCasaFina Arquicheture has been on the market since...</p>
-            <h3 data-toggle="collapse" data-target="#terceiro-paragrafo">Happy in collaborating for a more beautiful world</h3>
-            <p id="terceiro-paragrafo" class="collapse"> The TopCasaFina Arquicheture has been on the market since...</p>
-        </div>
+            <div class="panel panel-default">    
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Good prices</h3>
+                </div>
+                <div id="segundo-paragrafo" class="collapse">
+                    <div class="panel-body">   
+                        <p> The TopCasaFina Arquicheture has been on the market since...</p>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="panel panel-default">    
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Happy in collaborating for a more beautiful world</h3>
+                </div>
+                <div class="panel-body">    
+                    <p id="terceiro-paragrafo" class="collapse"> The TopCasaFina Arquicheture has been on the market since...</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="container">
+        <h2>Our Projects</h2>
+
+        <figure class="thumbnail">
+            <img src="./assets/img/projetos/casa-castelo.png" alt="Picture home castle">
+            <figcaption class="caption">
+                <h3>Castle Home</h3>
+                <p>Castle Home is the newest release of TopCasaFina Arquitetura, made for a monk.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="thumbnail">
+            <img src="./assets/img/projetos/casa-lago.png" alt="Picture home lake">
+            <figcaption class="caption">
+                <h3>Lake Home</h3>
+                <p>Castle Home is the newest release of TopCasaFina Arquitetura, made for a monk.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="thumbnail">
+            <img src="./assets/img/projetos/mercado-marapira.png" alt="Picture marapira market">
+            <figcaption class="caption">
+                <h3>Marapira Market</h3>
+                <p>Castle Home is the newest release of TopCasaFina Arquitetura, made for a monk.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="thumbnail">
+            <img src="./assets/img/projetos/palacio-dionisio.png" alt="Picture dionisio palace">
+            <figcaption class="caption">
+                <h3>Dionisio Palace</h3>
+                <p>Castle Home is the newest release of TopCasaFina Arquitetura, made for a monk.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="thumbnail">
+            <img src="./assets/img/projetos/residencia-ludi.png" alt="Picture ludi residence">
+            <figcaption class="caption">
+                <h3>Ludi Residence</h3>
+                <p>Castle Home is the newest release of TopCasaFina Arquitetura, made for a monk.</p>
+            </figcaption>
+        </figure>
+    </div>
 
         <script src="jquery.js"></script>
         <script src="./bootstrap/js/bootstrap.min.js">
-
         </script>
     </body>
 </html>
